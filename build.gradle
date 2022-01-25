@@ -26,6 +26,8 @@ dependencies {
     annotationProcessor("io.micronaut.spring:micronaut-spring-annotation")
     annotationProcessor("io.micronaut.spring:micronaut-spring-boot")
     annotationProcessor("io.micronaut.spring:micronaut-spring-web-annotation")
+    annotationProcessor("org.projectlombok:lombok")
+    compileOnly("org.projectlombok:lombok")
     implementation("io.micronaut:micronaut-http-client")
     implementation("io.micronaut:micronaut-http-server")
     implementation("io.micronaut:micronaut-runtime")
