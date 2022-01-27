@@ -6,11 +6,9 @@ import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.PathVariable;
 import io.micronaut.http.annotation.Post;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 
 @Controller
-@RequiredArgsConstructor
 public record ItemController(ItemService itemService) {
 
   @Get("/item/{id}")
